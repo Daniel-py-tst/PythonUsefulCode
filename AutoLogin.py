@@ -6,7 +6,7 @@ browser = webdriver.Chrome("./chromedriver") #Replace with driver filename
 browser.get("Site")
 
 
-user_input = browser.find_element_by_id('Username element')
+user_input = browser.find_element_by_id('Username element id')
 
 time.sleep(1)
 
@@ -17,7 +17,7 @@ for letter in username:
     wait_time = random.randint(0,1000)/1000
     time.sleep(wait_time)
 
-password_input = browser.find_element_by_id('Password element')
+password_input = browser.find_element_by_id('Password element id')
 
 time.sleep(1)
 
@@ -28,6 +28,6 @@ for letter in password:
     wait_time = random.randint(0,1000)/1000
     time.sleep(wait_time)
 
-signin_button = browser.find_element_by_id("Login button element")
+signin_button = browser.find_element_by_id("Login button element id")
 
 signin_button.click()
